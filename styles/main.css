@@ -1,0 +1,42 @@
+:root {
+    --clr-light: #F9FAF8;
+    --clr-neutral: #E5E7EB;
+    --clr-primary: #3882F6;
+    --clr-dark: #1F2937;
+
+    --ff-primary: 'roboto', sans-serif;
+    --ff-accent:  'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+hero p {
+    font-size: 1.125rem;
+}
+
+headerlogo {
+    font-size: 1.5rem;
+}
+infoheader {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+reviewtext {
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 200;
+}
