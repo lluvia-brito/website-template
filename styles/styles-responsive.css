@@ -1,8 +1,9 @@
 :root {
-    --clr-light: #F9FAF8;
-    --clr-neutral: #E5E7EB;
-    --clr-primary: #3882F6;
-    --clr-dark: #1F2937;
+    --clr-light: #faf0cd;
+    --clr-neutral: #fee476;
+    --clr-primary: #5f9fc5;
+    --clr-primary-accent: #cc9f41;
+    --clr-dark: #3f3b38;
 
     --ff-primary: 'roboto', sans-serif;
     --ff-accent:  'Playfair Display', serif;
@@ -13,7 +14,7 @@
     padding: 0;
 }
 body {
-    background-color: black;
+    background-color: var(--clr-dark);
     margin-inline: 10em;
     text-align: center;
 }
@@ -39,8 +40,8 @@ p {
 
 /* Navigation Bar */
 .header-wrapper {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-primary-accent);
+    color: var(--clr-dark);
     display: flex;
     justify-content: space-between;
     padding: .5em;
@@ -72,8 +73,8 @@ ul {
 .banner-wrapper {
     display: flex;
     flex-direction: row;
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-neutral);
+    color: var(--clr-primary-accent);
     
 }
 .hero-header-title {
@@ -83,11 +84,11 @@ ul {
 }
 .hero-paragraph {
     font-size: 18px;
-    color: var(--clr-neutral);
+    color: var(--clr-dark);
     padding: 0 1em;
 }
 .banner-content {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-neutral);
     padding: 3rem 0;
     max-width: 35rem;
     display: flex;
@@ -128,25 +129,32 @@ ul {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
-    margin: 1em;
+    margin: 0;
 }
 img {
     max-width: 100%;
     display: block;
 }
-.photo-content {
-    display: flexbox;
-    border: 5px solid var(--clr-primary);
+.photo-content img {
+    border: 3px solid var(--clr-primary);
     border-radius: 2px;
     max-width: 100%;
-    margin: 2em;
+}
+.photo-content {
+    display: flexbox;
+    margin: 1em;
     justify-content: space-between;
 }
 
 /* Review Banner */
 .review-wrapper {
-    background-color: var(--clr-neutral);
+    background-color: var(--clr-primary);
     padding: 2em;
+}
+.review-wrapper2 {
+    background-color: var(--clr-primary-accent);
+    padding: 2em;
+    margin-inline: 0;
 }
 .review-text {
     font-size: 2.25rem;
